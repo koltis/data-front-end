@@ -1,0 +1,21 @@
+<main>
+    <form [formGroup]="Product" (ngSubmit)="onSubmit()">
+        <fieldset class="main-form Animals-form">
+            <legend>Product:</legend>
+            <div class="main">
+                <div class="Animals-input">
+                    <label>Product:</label>
+                    <input type="text" placeholder="Product Name" formControlName="product_id">
+                </div>
+                <div class="buttons">
+                    <button type="submit">
+                    Submit
+                </button>
+                </div>
+                <div class="img">
+                    <img src="https://www.freepnglogos.com/uploads/thinking-png/thinking-get-started-with-marketing-for-new-retail-business-owners-8.png" alt="piensa luego compra">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</main>

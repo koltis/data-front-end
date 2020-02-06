@@ -1,0 +1,18 @@
+<main>
+    <ng-container *ngIf="productService.isLoading">
+        <mat-spinner>
+        </mat-spinner>
+    </ng-container>
+    <a [href]="product.productLink" *ngFor="let product of productService.Products" class="cart animated slideInDown" target="_blank">
+        <div class="cart-img">
+            <img [src]="product.imgLink" [alt]="product.descript">
+        </div>
+        <div class="cart-main">
+            <h3>Index: {{product.i}}</h3>
+            <h3>Price: {{product.price}} $</h3>
+            <div class="cart-description">
+                product-description:{{product.description}}
+            </div>
+        </div>
+    </a>
+</main>
